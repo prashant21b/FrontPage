@@ -99,6 +99,10 @@ const saveStories = async (stories) => {
 
     return newStories;
 };
+//Test api
+app.get('/', async (req, res) => {
+    res.send("OK");
+});
 
 // API: Fetch Stories from Database
 app.get('/stories', async (req, res) => {
